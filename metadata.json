@@ -1,0 +1,8 @@
+{
+  "name": "Doa Generator V.3.8",
+  "description": "Aplikasi Doa Generator",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

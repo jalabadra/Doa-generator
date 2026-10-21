@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-arabic-amiri { font-family: 'Amiri', serif; }
+  .font-arabic-naskh { font-family: 'Noto Naskh Arabic', serif; }
+  .font-arabic-scheherazade { font-family: 'Scheherazade New', serif; }
+  .font-arabic-kufi { font-family: 'Reem Kufi', sans-serif; }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0b1120;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Glassmorphic elements */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.preview-wrapper {
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.95), 0 0 35px rgba(16, 185, 129, 0.12);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
